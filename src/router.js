@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "./components/HomePage.vue"; // Import HomePage
 import UserProfile from "./components/UserProfile.vue"; // Import UserProfile component
 import AppLayout from "./components/AppLayout.vue"; // Import your AppLayout component
+import ProductCard from "./components/ProductCard.vue"; // Import your AppLayout component
 import LogIn from "./components/LogIn.vue";
 import SignUp from "./components/SignUp.vue";
 const routes = [
@@ -16,6 +17,10 @@ const routes = [
       {
         path: "profile", // Route for UserProfile
         component: UserProfile, // UserProfile will also be displayed within AppLayout
+      },
+      {
+        path: "products",
+        component: ProductCard, // HomePage will be displayed within AppLayout
       },
       {
         path: "login", // Route for UserProfile
