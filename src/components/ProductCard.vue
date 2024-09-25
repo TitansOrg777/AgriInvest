@@ -42,7 +42,7 @@
         <p>Fresh organic mangoes from the farm</p>
         <p>Location: Nairobi, Kenya</p>
         <p>Price: $15 per dozen</p>
-        
+
         <div class="button-container">
           <button class="add-to-cart-btn">
             <i class="fa fa-cart-plus"></i>
@@ -64,7 +64,13 @@ export default {
     return {
       isExpanded: false,
       selectedImage: this.getImage("mango.jpeg"),
-      images: ["mango.jpeg", "mango 1.jpeg", "mango 2.jpeg", "mango 3.jpeg", "mango 4.jpeg"],
+      images: [
+        "mango.jpeg",
+        "mango 1.jpeg",
+        "mango 2.jpeg",
+        "mango 3.jpeg",
+        "mango 4.jpeg",
+      ],
     };
   },
   methods: {
@@ -133,7 +139,7 @@ export default {
 /* Button Row Styling */
 .button-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 10px 0;
 }
 
@@ -147,6 +153,7 @@ export default {
   padding: 10px;
   font-size: 20px;
   cursor: pointer;
+  margin-right: 10px;
 }
 
 .add-to-cart-btn i,
@@ -202,7 +209,7 @@ export default {
 /* Button Container */
 .button-container {
   display: flex;
-  justify-content: space-between; /* Space between buttons */
+  justify-content: flex-start; 
   margin-top: 10px; /* Add some margin to separate buttons from text */
 }
 </style>
