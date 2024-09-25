@@ -85,7 +85,7 @@ export default {
   margin: 20px auto; /* Add margin around the card */
   background-color: white;
   transition: all 0.3s ease;
-  width: 350px; /* Increased width for better fit in normal mode */
+  width: 300px; /* Increased width for better fit in normal mode */
   height: 400px; /* Increased height for better fit */
   box-sizing: border-box;
   /* Box Shadow */
@@ -93,7 +93,7 @@ export default {
 }
 
 .product-card.expanded {
-  width: 70%; /* Expanded width for better fit */
+  width: 60%; /* Expanded width for better fit */
   height: auto; /* Allow height to expand as content grows */
 }
 
