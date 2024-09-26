@@ -5,13 +5,9 @@ import AppLayout from "./components/AppLayout.vue"; // Import your AppLayout com
 import ProductCard from "./components/ProductCard.vue"; // Import your AppLayout component
 import LogIn from "./components/LogIn.vue";
 import SignUp from "./components/SignUp.vue";
-<<<<<<< HEAD
 import ContactPage from "./components/ContactPage.vue"
 import BlogPage from "./components/BlogPage.vue";
-=======
-import ContactPage from "./components/ContactPage.vue";
 import CategoriesPage from "./components/CategoriesPage.vue";
->>>>>>> 26399d8336f660aec89a1eab270a9acfdcfe11dc
 const routes = [
   {
     path: "/",
@@ -42,13 +38,12 @@ const routes = [
         component: ContactPage, // UserProfile will also be displayed within AppLayout
       },
       {
-<<<<<<< HEAD
         path: "blog", // Route for UserProfile
         component: BlogPage, // UserProfile will also be displayed within AppLayout
-=======
+      },
+      { 
         path: "categories", // Route for UserProfile
         component: CategoriesPage, // UserProfile will also be displayed within AppLayout
->>>>>>> 26399d8336f660aec89a1eab270a9acfdcfe11dc
       },
       // You can add additional child routes as needed here
     ],
