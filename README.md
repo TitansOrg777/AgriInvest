@@ -15,5 +15,10 @@ Footer update
 ![footer](https://github.com/user-attachments/assets/31b53d1b-c40d-4c4c-9a91-afe551e471bb)
 Contact page
 ![contact](https://github.com/user-attachments/assets/81bd3e96-febe-4c2d-a0b6-f79d4bc00293)
+Categories Page
+![categories](https://github.com/user-attachments/assets/be8e4fe1-3773-4046-9614-2e633dc873d4)
+
+
+
 
 
