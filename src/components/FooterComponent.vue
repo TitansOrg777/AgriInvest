@@ -17,7 +17,7 @@
           <ul class="list-unstyled link-column">
             <li><a href="/" class="footer-link">Home</a></li>
             <li><a href="/profile" class="footer-link">Profile</a></li>
-            <li><a href="#" class="footer-link">Blog</a></li>
+            <li><a href="/blog" class="footer-link">Blog</a></li>
             <li><a href="/products" class="footer-link">Products</a></li>
             <li><a href="#" class="footer-link">Categories</a></li>
 
