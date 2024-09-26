@@ -5,6 +5,7 @@ import AppLayout from "./components/AppLayout.vue"; // Import your AppLayout com
 import ProductCard from "./components/ProductCard.vue"; // Import your AppLayout component
 import LogIn from "./components/LogIn.vue";
 import SignUp from "./components/SignUp.vue";
+import ContactPage from "./components/ContactPage.vue"
 const routes = [
   {
     path: "/",
@@ -29,6 +30,10 @@ const routes = [
       {
         path: "signup", // Route for UserProfile
         component: SignUp, // UserProfile will also be displayed within AppLayout
+      },
+      {
+        path: "contact", // Route for UserProfile
+        component: ContactPage, // UserProfile will also be displayed within AppLayout
       },
       // You can add additional child routes as needed here
     ],

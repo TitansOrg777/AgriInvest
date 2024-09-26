@@ -64,7 +64,7 @@
           <li class="nav-item"><a class="nav-link" href="/products" style="color: black">Products</a></li>
           <li class="nav-item"><a class="nav-link" href="#" style="color: black">Categories</a></li>
           <li class="nav-item"><a class="nav-link" href="#" style="color: black">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="#" style="color: black">Contacts</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact" style="color: black">Contacts</a></li>
         </ul>
 
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
