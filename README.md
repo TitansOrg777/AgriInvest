@@ -11,4 +11,6 @@ login form
 ![login](https://github.com/user-attachments/assets/cad7cd3d-9035-4543-b4ba-407f74e82332)
 signupform
 ![signup](https://github.com/user-attachments/assets/6af9a466-89ee-4bd0-9fa2-2c872a3737a6)
+Footer update
+![footer](https://github.com/user-attachments/assets/31b53d1b-c40d-4c4c-9a91-afe551e471bb)
 
