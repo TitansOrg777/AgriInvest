@@ -119,7 +119,7 @@ export default {
 }
 
 .collapsed-details {
-  text-align: center;
+  text-align: flex-start;
   flex-grow: 1;
 }
 
