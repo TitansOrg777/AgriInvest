@@ -62,8 +62,13 @@
           <li class="nav-item"><a class="nav-link" href="/" style="color: black">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="/profile" style="color: black">Profile</a></li>
           <li class="nav-item"><a class="nav-link" href="/products" style="color: black">Products</a></li>
+<<<<<<< HEAD
           <li class="nav-item"><a class="nav-link" href="#" style="color: black">Categories</a></li>
           <li class="nav-item"><a class="nav-link" href="/blog" style="color: black">Blog</a></li>
+=======
+          <li class="nav-item"><a class="nav-link" href="/categories" style="color: black">Categories</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" style="color: black">Blog</a></li>
+>>>>>>> 26399d8336f660aec89a1eab270a9acfdcfe11dc
           <li class="nav-item"><a class="nav-link" href="/contact" style="color: black">Contacts</a></li>
           
         </ul>

@@ -8,12 +8,17 @@ cards
 cards expanded view
 ![expanded card](https://github.com/user-attachments/assets/7d7c3923-ec6b-4975-97ec-b38a98b9f67f)
 login form
-![login](https://github.com/user-attachments/assets/cad7cd3d-9035-4543-b4ba-407f74e82332)
+![login](https://github.com/user-attachments/assets/ebdb9054-b105-4077-9840-b8650f181487)
 signupform
-![signup](https://github.com/user-attachments/assets/6af9a466-89ee-4bd0-9fa2-2c872a3737a6)
+![signup](https://github.com/user-attachments/assets/c4f10ed1-9e4f-4aa5-b205-49afa3d18b98)
 Footer update
 ![footer](https://github.com/user-attachments/assets/31b53d1b-c40d-4c4c-9a91-afe551e471bb)
 Contact page
 ![contact](https://github.com/user-attachments/assets/81bd3e96-febe-4c2d-a0b6-f79d4bc00293)
+Categories Page
+![categories](https://github.com/user-attachments/assets/be8e4fe1-3773-4046-9614-2e633dc873d4)
+
+
+
 
 
