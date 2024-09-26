@@ -13,4 +13,7 @@ signupform
 ![signup](https://github.com/user-attachments/assets/6af9a466-89ee-4bd0-9fa2-2c872a3737a6)
 Footer update
 ![footer](https://github.com/user-attachments/assets/31b53d1b-c40d-4c4c-9a91-afe551e471bb)
+Contact page
+![contact](https://github.com/user-attachments/assets/81bd3e96-febe-4c2d-a0b6-f79d4bc00293)
+
 
