@@ -15,9 +15,12 @@
         <div class="col-md-4 mb-4 mb-md-0">
           <h5>Quick Links</h5>
           <ul class="list-unstyled link-column">
-            <li><a href="#" class="footer-link">Home</a></li>
-            <li><a href="#" class="footer-link">Sign Up</a></li>
-            <li><a href="#" class="footer-link">Contact Us</a></li>
+            <li><a href="/" class="footer-link">Home</a></li>
+            <li><a href="/profile" class="footer-link">Profile</a></li>
+            <li><a href="#" class="footer-link">Blog</a></li>
+            <li><a href="/products" class="footer-link">Products</a></li>
+            <li><a href="#" class="footer-link">Categories</a></li>
+
           </ul>
         </div>
 
