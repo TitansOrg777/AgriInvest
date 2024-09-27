@@ -87,7 +87,6 @@ export default {
         name: "Mango",
         price: 15,
         quantity: 1, // Add 1 quantity by default when adding to cart
-        image: this.getImage("mango.jpeg") // Add the image URL
       };
       CartContext.addItem(item); // Call addItem from CartContext
       alert(`${item.name} has been added to the cart!`); // Optional alert for feedback
