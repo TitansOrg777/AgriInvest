@@ -1,6 +1,8 @@
 **Screenshots** 
 Homepage
-![home](https://github.com/user-attachments/assets/07cf8588-4a20-4193-95ce-c19273416ca6)
+![home](https://github.com/user-attachments/assets/c1bf2da1-cdc2-4203-9328-fe066974ac73)
+![home2](https://github.com/user-attachments/assets/a6c77af8-d22c-43f7-9122-c4c22ba4719d)
+![home3](https://github.com/user-attachments/assets/7bd4848a-d5fe-4e51-9d6d-03395116b52c)
 profile page
 ![profile](https://github.com/user-attachments/assets/dc2ac413-255a-4312-bc10-70bc07c44a48)
 cards
