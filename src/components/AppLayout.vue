@@ -48,7 +48,10 @@
               </form>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-shopping-cart" style="color: #00d257"></i></a>
+              <router-link to="/cart" class="nav-link">
+                <i class="fas fa-shopping-cart" style="color: #00d257"></i>
+                <span class="badge bg-danger">{{ CartContext.itemCount }}</span>
+              </router-link>
             </li>
           </ul>
         </div>
@@ -62,21 +65,18 @@
           <li class="nav-item"><a class="nav-link" href="/" style="color: black">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="/profile" style="color: black">Profile</a></li>
           <li class="nav-item"><a class="nav-link" href="/products" style="color: black">Products</a></li>
-          <li class="nav-item"><a class="nav-link" href="categories" style="color: black">Categories</a></li>
+          <li class="nav-item"><a class="nav-link" href="/categories" style="color: black">Categories</a></li>
           <li class="nav-item"><a class="nav-link" href="/blog" style="color: black">Blog</a></li>
-
           <li class="nav-item"><a class="nav-link" href="/contact" style="color: black">Contacts</a></li>
-          
         </ul>
 
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
           <li class="nav-item me-2">
-  <router-link to="/login" class="btn btn-outline-success" style="border-color: #00d257; color: #00d257">Login</router-link>
-</li>
-  <li class="nav-item me-2">
-  <router-link to="/signup" class="btn btn-outline-success" style="border-color: #00d257; color: #00d257">Signup</router-link>
-  </li>
-
+            <router-link to="/login" class="btn btn-outline-success" style="border-color: #00d257; color: #00d257">Login</router-link>
+          </li>
+          <li class="nav-item me-2">
+            <router-link to="/signup" class="btn btn-outline-success" style="border-color: #00d257; color: #00d257">Signup</router-link>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="/profile"><i class="fas fa-user" style="color: black"></i></a>
           </li>
@@ -90,8 +90,15 @@
 </template>
 
 <script>
+import { CartContext } from '@/CartContext'; // Import the CartContext
+
 export default {
   name: "AppLayout",
+  setup() {
+    return {
+      CartContext,
+    };
+  },
 };
 </script>
 

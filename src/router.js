@@ -1,54 +1,63 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomePage from "./components/HomePage.vue"; // Import HomePage
-import UserProfile from "./components/UserProfile.vue"; // Import UserProfile component
-import AppLayout from "./components/AppLayout.vue"; // Import your AppLayout component
-import ProductCard from "./components/ProductCard.vue"; // Import your AppLayout component
+import HomePage from "./components/HomePage.vue";
+import UserProfile from "./components/UserProfile.vue";
+import AppLayout from "./components/AppLayout.vue";
+import ProductCard from "./components/ProductCard.vue";
 import LogIn from "./components/LogIn.vue";
 import SignUp from "./components/SignUp.vue";
-import ContactPage from "./components/ContactPage.vue"
+import ContactPage from "./components/ContactPage.vue";
 import BlogPage from "./components/BlogPage.vue";
 import CategoriesPage from "./components/CategoriesPage.vue";
+import CartPage from "./components/CartPage.vue"; // Import CartPage component
+import CheckoutPage from "./components/CheckoutPage.vue"; // Import CheckoutPage component
+
 const routes = [
   {
     path: "/",
-    component: AppLayout, // Use AppLayout as the layout for this route
+    component: AppLayout,
     children: [
       {
         path: "",
-        component: HomePage, // HomePage will be displayed within AppLayout
+        component: HomePage,
       },
       {
-        path: "profile", // Route for UserProfile
-        component: UserProfile, // UserProfile will also be displayed within AppLayout
+        path: "profile",
+        component: UserProfile,
       },
       {
         path: "products",
-        component: ProductCard, // HomePage will be displayed within AppLayout
+        component: ProductCard,
       },
       {
-        path: "login", // Route for UserProfile
-        component: LogIn, // UserProfile will also be displayed within AppLayout
+        path: "login",
+        component: LogIn,
       },
       {
-        path: "signup", // Route for UserProfile
-        component: SignUp, // UserProfile will also be displayed within AppLayout
+        path: "signup",
+        component: SignUp,
       },
       {
-        path: "contact", // Route for UserProfile
-        component: ContactPage, // UserProfile will also be displayed within AppLayout
+        path: "contact",
+        component: ContactPage,
       },
       {
-        path: "blog", // Route for UserProfile
-        component: BlogPage, // UserProfile will also be displayed within AppLayout
+        path: "blog",
+        component: BlogPage,
       },
-      { 
-        path: "categories", // Route for UserProfile
-        component: CategoriesPage, // UserProfile will also be displayed within AppLayout
+      {
+        path: "categories",
+        component: CategoriesPage,
       },
-      // You can add additional child routes as needed here
+      {
+        path: "cart",
+        component: CartPage,
+      },
+      {
+        path: "checkout", // Route for Checkout
+        component: CheckoutPage, // Checkout component
+      },
     ],
   },
-  // Additional routes can be added here if needed, using different layouts
 ];
 
 const router = createRouter({

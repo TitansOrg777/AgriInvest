@@ -12,7 +12,7 @@
 
       <!-- Buttons Row -->
       <div class="button-row">
-        <button class="add-to-cart-btn">
+        <button class="add-to-cart-btn" @click="addToCart">
           <i class="fa fa-cart-plus"></i>
         </button>
         <button @click="isExpanded = true" class="expand-btn">
@@ -44,7 +44,7 @@
         <p>Price: $15 per dozen</p>
 
         <div class="button-container">
-          <button class="add-to-cart-btn">
+          <button class="add-to-cart-btn" @click="addToCart">
             <i class="fa fa-cart-plus"></i>
           </button>
           <!-- Contract Icon (_) -->
@@ -58,6 +58,8 @@
 </template>
 
 <script>
+import { CartContext } from '@/CartContext'; // Import CartContext
+
 export default {
   name: "ProductCard",
   data() {
@@ -77,6 +79,18 @@ export default {
     // Fetch images from assets folder
     getImage(image) {
       return require(`@/assets/${image}`);
+    },
+
+    addToCart() {
+      const item = {
+        id: "mango", // Use a unique ID for each product
+        name: "Mango",
+        price: 15,
+        quantity: 1, // Add 1 quantity by default when adding to cart
+        image: this.getImage("mango.jpeg") // Add the image URL
+      };
+      CartContext.addItem(item); // Call addItem from CartContext
+      alert(`${item.name} has been added to the cart!`); // Optional alert for feedback
     },
   },
 };
