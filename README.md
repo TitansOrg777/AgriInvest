@@ -19,7 +19,7 @@ Categories Page
 ![categories](https://github.com/user-attachments/assets/be8e4fe1-3773-4046-9614-2e633dc873d4)
 Blog Page
 ![blog](https://github.com/user-attachments/assets/ae785380-e26c-4774-8153-0893c3ea0e78)
-
-
+Read More
+![blog-readmore](https://github.com/user-attachments/assets/ecaf7c63-e61e-438d-b3c3-eae2c40aeb0d)
 
 
