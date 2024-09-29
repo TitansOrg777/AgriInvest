@@ -19,7 +19,7 @@
             <li><a href="/profile" class="footer-link">Profile</a></li>
             <li><a href="/blog" class="footer-link">Blog</a></li>
             <li><a href="/products" class="footer-link">Products</a></li>
-            <li><a href="#" class="footer-link">Categories</a></li>
+            <li><a href="/categories" class="footer-link">Categories</a></li>
 
           </ul>
         </div>
