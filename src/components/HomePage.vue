@@ -50,7 +50,7 @@ export default {
     return {
       // Extracted Categories
       categories: [
-        { name: "Grains", icon: "fas fa-wheat-a-variant", color: "#FFD700" },
+        { name: "Grains", icon: "fa-solid fa-jar-wheat", color: "#FFD700" },
         { name: "Vegetables", icon: "fas fa-carrot", color: "#32CD32" },
         { name: "Legumes", icon: "fas fa-seedling", color: "#98FB98" },
         { name: "Fruits", icon: "fas fa-apple-alt", color: "#FF6347" },
