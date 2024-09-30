@@ -104,15 +104,16 @@ export default {
   margin: 20px auto; /* Add margin around the card */
   background-color: white;
   transition: all 0.3s ease;
-  width: 300px; /* Increased width for better fit in normal mode */
-  height: 400px; /* Increased height for better fit */
+  width: 300px; /* Original width for contracted view */
+  height: 400px; /* Original height for contracted view */
   box-sizing: border-box;
   /* Box Shadow */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .product-card.expanded {
-  width: 60%; /* Expanded width for better fit */
+  width: 90%; /* Full width for better fit on smaller screens */
+  max-width: 600px; /* Maximum width for expanded view */
   height: auto; /* Allow height to expand as content grows */
 }
 
@@ -179,16 +180,17 @@ export default {
 .expanded-view {
   display: flex;
   justify-content: space-between;
+  flex-direction: column; /* Stack elements vertically for better fit */
 }
 
 .image-gallery {
-  flex-basis: 40%; /* Images on the right */
-  margin-right: 16px;
+  flex-basis: 100%; /* Images take full width */
+  margin-bottom: 10px; /* Add space below the image gallery */
 }
 
 .main-image {
   width: 100%;
-  height: 400px; /* Adjusted height for better view */
+  height: 300px; /* Adjusted height for better view */
   object-fit: cover;
   border-radius: 8px;
 }
@@ -196,6 +198,7 @@ export default {
 .thumbnail-container {
   display: flex;
   margin-top: 10px;
+  overflow-x: auto; /* Allow horizontal scrolling if thumbnails exceed width */
 }
 
 .thumbnail {
@@ -213,7 +216,7 @@ export default {
 }
 
 .product-details {
-  flex-basis: 50%; /* Details on the left */
+  flex-basis: 100%; /* Details take full width */
   display: flex;
   flex-direction: column; /* Align items vertically */
   justify-content: center; /* Center items vertically */

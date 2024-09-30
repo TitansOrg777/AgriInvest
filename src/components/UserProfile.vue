@@ -8,11 +8,16 @@
     <div class="right-section">
       <img :src="profileImage" alt="Profile Photo" class="profile-image" />
       <div class="user-data" v-if="isLoggedIn">
-        <p>Role: {{ userRole }}</p>
-        <p>Region: {{ userRegion }}</p>
+        <p class="role">Role: {{ userRole }}</p>
+        <p class="region">Region: {{ userRegion }}</p>
       </div>
       <p v-if="!isLoggedIn" class="login-message">Please login first</p>
-      <router-link v-if="!isLoggedIn" to="/login" class="login-button" style="text-decoration: none;">
+      <router-link
+        v-if="!isLoggedIn"
+        to="/login"
+        class="login-button"
+        style="text-decoration: none;"
+      >
         Login
       </router-link>
     </div>
@@ -43,9 +48,11 @@ export default {
 <style scoped>
 .user-profile {
   display: flex;
-  justify-content: space-between;
-  width: 600px; /* Adjusted width */
-  height: 400px; /* Adjusted height */
+  flex-direction: column; /* Change to column for better responsiveness */
+  align-items: center;
+  width: 100%; /* Use full width for better responsiveness */
+  max-width: 600px; /* Set a max width for larger screens */
+  height: auto; /* Allow height to adjust based on content */
   background: #fff;
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -54,17 +61,19 @@ export default {
 }
 
 .left-section {
-  flex: 1;
+  width: 100%; /* Full width for left section */
   background: linear-gradient(45deg, #fef500, #18c729); /* Applying gradient */
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px; /* Add padding for better spacing */
 }
 
 .welcome-text {
   color: white;
-  font-size: 2em;
+  font-size: 1.5em; /* Adjusted font size for better readability */
   font-weight: bold;
+  text-align: center; /* Center align text for better aesthetics */
 }
 
 .right-section {
@@ -73,6 +82,7 @@ export default {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 20px; /* Add padding for better spacing */
 }
 
 .profile-image {
@@ -92,10 +102,16 @@ p {
   color: #333;
 }
 
+.role,
+.region {
+  font-weight: bold; /* Highlight role and region */
+}
+
 .login-message {
   color: #333; /* Dark color for the login message */
   margin-top: 10px; /* Space above the message */
 }
+
 .login-button {
   padding: 10px 20px;
   background-color: #18c729;
@@ -108,5 +124,17 @@ p {
 
 .login-button:hover {
   background-color: #159c1a;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .welcome-text {
+    font-size: 1.2em; /* Smaller font size on mobile */
+  }
+
+  .profile-image {
+    width: 100px; /* Smaller image on mobile */
+    height: 100px; /* Smaller image on mobile */
+  }
 }
 </style>

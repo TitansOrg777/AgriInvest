@@ -43,8 +43,8 @@ export default {
 .contact-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  height: 100vh;
+  align-items: flex-start; /* Align items to the start */
+  height: auto; /* Change height to auto */
   padding: 30px;
   background: #f0f0f3; /* Light Background for Neumorphism */
   flex-wrap: wrap; /* Allows wrapping on smaller screens */
@@ -101,7 +101,6 @@ export default {
   position: relative;
   top: -50px; /* Slight Overlap */
   z-index: 0;
-  flex-shrink: 0; /* Prevent shrinking */
 }
 
 /* Contact Form Styling */
@@ -170,10 +169,10 @@ export default {
 
   .left-container,
   .right-container {
-    width: 90%;
+    width: 100%; /* Occupy full width */
     margin: 15px 0;
     padding: 20px;
-    top: 0;
+    top: 0; /* Reset overlap */
     box-shadow: 10px 10px 30px #cccccc, -10px -10px 30px #ffffff;
   }
 
