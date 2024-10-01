@@ -27,6 +27,8 @@ Checkout form
 ![checkout form](https://github.com/user-attachments/assets/40225734-e021-47f9-a5e7-5fc647c61ce1)
 cart
 ![cart](https://github.com/user-attachments/assets/664d9c47-30a8-4a27-936f-050e11253e12)
+Farmer dashboard
+![farmer dashboard](https://github.com/user-attachments/assets/6953ed35-053d-4660-89df-2095babb8230)
 
 
 
