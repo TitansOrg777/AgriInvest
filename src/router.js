@@ -8,8 +8,9 @@ import SignUp from "./components/SignUp.vue";
 import ContactPage from "./components/ContactPage.vue";
 import BlogPage from "./components/BlogPage.vue";
 import CategoriesPage from "./components/CategoriesPage.vue";
-import CartPage from "./components/CartPage.vue"; // Import CartPage component
-import CheckoutPage from "./components/CheckoutPage.vue"; // Import CheckoutPage component
+import CartPage from "./components/CartPage.vue";
+import CheckoutPage from "./components/CheckoutPage.vue";
+import FarmerDashboard from "./components/FarmerDashboard.vue"; // Import the FarmerDashboard component
 
 const routes = [
   {
@@ -53,8 +54,12 @@ const routes = [
         component: CartPage,
       },
       {
-        path: "checkout", // Route for Checkout
-        component: CheckoutPage, // Checkout component
+        path: "checkout",
+        component: CheckoutPage,
+      },
+      {
+        path: "farmer-dashboard", // New route for Farmer Dashboard
+        component: FarmerDashboard,
       },
     ],
   },
