@@ -14,6 +14,10 @@
         <label for="productDescription">Description</label>
         <textarea class="form-control neumorphic-input" id="productDescription" v-model="productDescription" required></textarea>
       </div>
+      <div class="form-group">
+        <label for="productImage">Upload Image</label>
+        <input type="file" class="form-control neumorphic-input" id="productImage" @change="handleImageUpload" accept="image/*" />
+      </div>
       <button type="submit" class="btn neumorphic-btn">Create Product</button>
     </form>
   </div>
@@ -26,14 +30,22 @@ export default {
       productName: "",
       productPrice: "",
       productDescription: "",
+      productImage: null, // To store the uploaded image
     };
   },
   methods: {
+    handleImageUpload(event) {
+      const file = event.target.files[0];
+      if (file) {
+        this.productImage = file;
+      }
+    },
     handleCreateProduct() {
       const productData = {
         name: this.productName,
         price: this.productPrice,
         description: this.productDescription,
+        image: this.productImage,
       };
       console.log("New Product Data:", productData);
     },
@@ -66,5 +78,11 @@ export default {
   border: none;
   border-radius: 30px;
   box-shadow: 8px 8px 16px #c3c3c3, -8px -8px 16px #ffffff;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
 }
 </style>

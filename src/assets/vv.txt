@@ -1,73 +1,3 @@
-<template>
-  <div class="container">
-    <h3 class="title">Organic Products</h3>
-    <div class="products-container">
-      <div class="product" v-for="product in products" :key="product.id" :data-name="product.name" @click="showPreview(product.id)">
-        <img :src="product.image" alt="Product Image">
-        <h3>{{ product.name }}</h3>
-        <div class="price">{{ product.price }}</div>
-      </div>
-    </div>
-
-    <div class="products-preview" v-if="activeProduct">
-      <div class="preview">
-        <i class="bx bx-x" @click="closePreview"></i>
-        <img :src="activeProduct.image" alt="Product Image">
-        <h3>{{ activeProduct.name }}</h3>
-        <div class="stars">
-          <i class='bx bxs-star' v-for="star in 5" :key="star"></i>
-          <span>( 250 )</span>
-        </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-        <div class="price">{{ activeProduct.price }}</div>
-        <div class="buttons">
-          <a href="#" class="buy">Buy Now</a>
-          <a href="#" class="cart" @click.prevent="addToCart(activeProduct)">Add to Cart</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</template>
-
-<script>
-import { CartContext } from '@/CartContext'; // Adjust the import path to your actual CartContext location
-
-export default {
-  data() {
-    return {
-      products: [
-        { id: 'p-1', name: 'Strawberries', price: 2.00, image: require('@/assets/images/1.png') },
-        { id: 'p-2', name: 'Onions', price: 2.00, image: require('@/assets/images/2.png') },
-        { id: 'p-3', name: 'Tomatoes', price: 2.00, image: require('@/assets/images/3.png') },
-        { id: 'p-4', name: 'Brinjal', price: 2.00, image: require('@/assets/images/4.png') },
-        { id: 'p-5', name: 'Broccoli', price: 2.00, image: require('@/assets/images/5.png') },
-        { id: 'p-6', name: 'Potatoes', price: 2.00, image: require('@/assets/images/6.png') },
-      ],
-      activeProduct: null,
-    };
-  },
-  methods: {
-    showPreview(productId) {
-      this.activeProduct = this.products.find(product => product.id === productId);
-    },
-    closePreview() {
-      this.activeProduct = null;
-    },
-    addToCart(product) {
-      const item = { 
-        id: product.id, 
-        name: product.name, 
-        price: product.price, 
-        image: product.image, // Ensure image is included
-        quantity: 1 
-      };
-      CartContext.addItem(item); // Use CartContext to add the item to the cart
-      alert(`${product.name} has been added to your cart!`); // Optional feedback
-    },
-  },
-};
-</script>
-
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
 
@@ -254,4 +184,3 @@ body {
   background: linear-gradient(45deg, #444, #555); /* Updated hover state with gradient */
 }
 </style>
-

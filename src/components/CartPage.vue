@@ -1,15 +1,15 @@
 <template>
   <div class="container my-4 cart-container">
-    <h2>Your Cart</h2>
-    <div v-if="items.length === 0" class="alert alert-warning" role="alert">
+    <h2 class="text-center">Your Cart</h2>
+    <div v-if="items.length === 0" class="alert alert-warning text-center" role="alert">
       Your cart is empty!
     </div>
     <div v-else>
       <div class="list-group">
         <div
-          v-for="item in items" 
-          :key="item.id" 
-          class="list-group-item d-flex justify-content-between align-items-center"
+          v-for="item in items"
+          :key="item.id"
+          class="list-group-item d-flex justify-content-between align-items-center cart-item"
         >
           <div class="d-flex align-items-center">
             <img :src="item.image" alt="Product Image" class="cart-image" />
@@ -22,8 +22,8 @@
           <button @click="removeItem(item)" class="btn btn-danger">Remove</button>
         </div>
       </div>
-      <h3 class="mt-3">Total: ${{ total.toFixed(2) }}</h3>
-      <router-link to="/checkout" class="btn btn-success mt-3">Proceed to Checkout</router-link>
+      <h3 class="mt-3 text-right">Total: ${{ total.toFixed(2) }}</h3>
+      <router-link to="/checkout" class="btn btn-success mt-3 w-100">Proceed to Checkout</router-link>
     </div>
   </div>
 </template>
@@ -56,22 +56,33 @@ export default {
 
 <style scoped>
 .cart-container {
-  background: #f0f0f0;
+  background: #ffffff; /* Changed to white for contrast */
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.cart-container:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .list-group-item {
   border: none;
   border-radius: 8px;
-  padding: 10px;
+  padding: 15px;
   margin-bottom: 10px;
-  background-color: white;
+  background-color: #f9f9f9; /* Light gray background */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.list-group-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .cart-image {
-  width: 50px;
+  width: 70px; /* Increased for better visibility */
   height: auto;
   border-radius: 5px;
 }
@@ -79,10 +90,37 @@ export default {
 .btn-danger {
   background-color: #dc3545;
   color: white;
+  transition: background-color 0.3s;
+}
+
+.btn-danger:hover {
+  background-color: #c82333; /* Darker shade on hover */
 }
 
 .btn-success {
   background-color: #28a745;
   color: white;
+  transition: background-color 0.3s;
+}
+
+.btn-success:hover {
+  background-color: #218838; /* Darker shade on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .cart-container {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  .list-group-item {
+    flex-direction: column; /* Stack items on small screens */
+    align-items: flex-start;
+  }
+
+  .ml-3 {
+    margin-left: 0; /* Remove margin for small screens */
+    margin-top: 10px; /* Add top margin */
+  }
 }
 </style>

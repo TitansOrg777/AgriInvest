@@ -3,7 +3,12 @@ import { reactive, watch } from "vue";
 // Load cart items from localStorage if available
 const loadCartItems = () => {
   const storedItems = localStorage.getItem("cartItems");
-  return storedItems ? JSON.parse(storedItems) : [];
+  return storedItems
+    ? JSON.parse(storedItems).map((item) => ({
+        ...item,
+        price: parseFloat(item.price), // Ensure price is a number
+      }))
+    : [];
 };
 
 export const CartContext = reactive({
